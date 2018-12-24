@@ -1,0 +1,13 @@
+{
+  "name": "Google-Oauth",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "git@github.com:omokaro-faith/Google-Oauth.git",
+  "author": "andela-fomokaro <faith.omokaro@andela.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9"
+  }
+}
