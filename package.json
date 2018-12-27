@@ -6,6 +6,7 @@
   "author": "andela-fomokaro <faith.omokaro@andela.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^6.2.0",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "nodemon": "^1.18.9",
