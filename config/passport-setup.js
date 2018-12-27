@@ -8,7 +8,9 @@ passport.use(
   callbackURL: process.env.CALLBACK_URL,
   clientID: process.env.CLIENT_ID,
   clientSecret: process.env.CLIENT_SECRET,
-}, () => {
+}, (accessToken, refreshToken, profile, done) => {
   //passport callback function
+  console.log('passport callback fired');
+  console.log(profile);
   })
 )
