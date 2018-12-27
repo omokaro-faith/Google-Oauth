@@ -25,4 +25,3 @@ app.use('/auth', authRoutes);
 app.listen('3000', () => {
   console.log('Listening for requests on port 3000');
 });
-
