@@ -4,6 +4,7 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 require('dotenv').config();
 const authRoutes = require('./routes/auth-routes');
+const profileRoutes = require('./routes/profile-routes');
 require('./config/passport-setup');
 
 const app = express();
@@ -32,6 +33,7 @@ app.get('/', (req, res) => {
 
 //setup routes
 app.use('/auth', authRoutes);
+app.use('/profile', profileRoutes);
 
 app.listen('3000', () => {
   console.log('Listening for requests on port 3000');
