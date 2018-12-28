@@ -7,6 +7,9 @@ const authRoutes = require('./routes/auth-routes');
 const profileRoutes = require('./routes/profile-routes');
 require('./config/passport-setup');
 
+const port = process.env.PORT || 3000;
+
+
 const app = express();
 
 //setup view engine
@@ -35,6 +38,6 @@ app.get('/', (req, res) => {
 app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 
-app.listen('3000', () => {
-  console.log('Listening for requests on port 3000');
+app.listen(port, () => {
+  console.log('Listening for requests');
 });
