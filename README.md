@@ -1,2 +1,2 @@
 # Google-Oauth
-Server side authentication for google using passportjs
+Server side google authentication using passportjs
